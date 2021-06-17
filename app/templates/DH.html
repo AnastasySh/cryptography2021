@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>ПКА</title>
+</head>
+
+<body>
+    <!--навигация-->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <== домой </a>
+                    <span class="navbar-text">
+                        Шипилова Анастасия 181-351
+                    </span>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col"> </div>
+        <div class="col mt-5">
+            <h3 class="text-center">{{title}}</h3>
+            <form action="" method="post">
+                <div class="mb-3 mt-5">
+                    <label for="N" class="form-label">введите простое число N</label>
+                    <input class="form-control" id="N" name="N"></textarea>
+                </div>
+                <div class="mb-3 mt-5">
+                    <label for="N" class="form-label">введите простое число A. A должно быть меньше N</label>
+                    <input class="form-control" id="A" name="A"></textarea>
+                </div>
+                <div class="mb-3 mt-5">
+                    <label for="N" class="form-label">Введите натуральное (секретное) число пользователя 1 - kа:</label>
+                    <input class="form-control" id="ka" name="ka"></textarea>
+                </div>
+                <div class="mb-3 mt-5">
+                    <label for="N" class="form-label">Введите натуральное (секретное) число пользователя 2 - kb:</label>
+                    <input class="form-control" id="kb" name="kb"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark mb-5">Обмен ключами</button>
+            </form>
+            {%if DH%}
+            <div>
+                <p class="mb-5">Общий ключ: {{DH}}</p>
+            </div>
+            {%endif%}
+
+        </div>
+        <div class="col"> </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+            -->
+</body>
+
+</html>
